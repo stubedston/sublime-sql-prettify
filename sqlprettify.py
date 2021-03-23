@@ -4,12 +4,12 @@ import sys
 import os
 
 sys.path.append(os.path.dirname(__file__))
-
+print(__file__)
 import sqlparse
 
 def plugin_loaded():
     global settings
-    settings = sublime.load_settings('SQL Prettify.sublime-settings')
+    settings = sublime.load_settings('sql-prettify.sublime-settings')
 
 class SqlPrettifyCommand(sublime_plugin.TextCommand):
     def prettify(self, edit, region):
