@@ -1,0 +1,4 @@
+[{
+  "caption": "SQL Prettify: Format Current SQL File",
+  "command": "sql_prettify"
+}]
