@@ -20,15 +20,15 @@ Default settings are:
 ```
 {
     // Changes how keywords are formatted. Allowed values are:
-    // "upper", "lower" and "capitalize"
+    // none, "upper", "lower" and "capitalize"
     "keyword_case": "upper",
     // Changes how identifiers are formatted. Allowed values are:
-    // "upper", "lower", and "capitalize"
+    // none, "upper", "lower", and "capitalize"
     "identifier_case": "lower",
     // Remove comments from the statement
-    "strip_comments": true,
-    // Use single spaces around all operators
-    "use_space_around_operators": true,
+    "strip_comments": false,
+    // If missing, add single spaces around operators
+    "use_space_around_operators": false,
     // If truncate_strings is a positive integer, string literals longer than
     // the given value will be truncated
     "truncate_strings": null,
@@ -37,11 +37,11 @@ Default settings are:
     "truncate_char": "[...]",
     // Insert a newline between the start of the statement and the first
     // column name
-    "indent_columns": true,
+    "indent_columns": false,
     // Change how the statement is indented
-    "reindent": true,
+    "reindent": false,
     // Change how the statement is indented and align keywords
-    "reindent_algined": true,
+    "reindent_algined": false,
     // Indent all lines after the first
     "indent_after_first": false,
     // If True tabs instead of spaces are used for indentation
@@ -53,9 +53,10 @@ Default settings are:
     "wrap_after": 0,
     // Use comma-first notation for column names
     "comma_first": false,
+    // Remove excess whitespace including newlines
+    "strip_whitespace": false,
     // Undocumented
-    "right_margin": null,
-    "stip_whitespace": false
+    "right_margin": null
 }
 ```
 
